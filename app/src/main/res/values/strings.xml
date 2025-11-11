@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الطلب الرقمي</string>
+    <string name="loading">جاري التحميل…</string>
+    <string name="no_internet">لا يوجد اتصال بالإنترنت</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="error_loading">حدث خطأ أثناء التحميل</string>
+    <string name="exit_message">اضغط مرة أخرى للخروج</string>
+    <string name="website_url">https://digitalorder.store</string>
+    <string name="version">الإصدار 1.0.6</string>
+    <string name="ssl_error">لا يمكن تحميل الموقع بسبب مشكلة في شهادة الأمان</string>
+    <string name="no_app_to_open">لا يوجد تطبيق لفتح هذا الرابط</string>
+    <string name="downloading_file">جاري تحميل الملف: %1$s</string>
+    <string name="download_failed">فشل تحميل الملف</string>
+    <string name="storage_permission_required">يجب السماح بالوصول إلى مساحة التخزين لتحميل الملفات</string>
+    <string name="storage_permission_title">صلاحية التخزين</string>
+    <string name="storage_permission_message">يحتاج التطبيق إلى صلاحية الوصول إلى مساحة التخزين لحفظ الملفات المحمّلة.</string>
+    <string name="ok">حسناً</string>
+    <string name="cancel">إلغاء</string>
+    <string name="settings">الإعدادات</string>
+    <string name="dark_mode">الوضع الليلي</string>
+    <string name="appearance">المظهر</string>
+    <string name="storage">التخزين</string>
+    <string name="clear_cache">مسح الكاش</string>
+    <string name="clear_cache_description">حذف الملفات المؤقتة لتحرير مساحة</string>
+    <string name="clear_cache_message">هل تريد مسح جميع الملفات المؤقتة؟</string>
+    <string name="clear">مسح</string>
+    <string name="cache_cleared">تم مسح الكاش بنجاح</string>
+    <string name="about">حول</string>
+    <string name="about_app">حول التطبيق</string>
+    <string name="about_message">تطبيق الطلب الرقمي\n\nالإصدار: 1.0.6\n\nتطبيق متقدم يوفر تجربة تصفح سلسة وسريعة لموقع digitalorder.store</string>
+    <string name="share">مشاركة</string>
+    <string name="share_via">مشاركة عبر</string>
+    <string name="refresh">تحديث</string>
+    <string name="home">الرئيسية</string>
+</resources>
