@@ -31,7 +31,7 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
-import androidx.appcompat.widget.Toolbar;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -90,8 +90,6 @@ public class MainActivity extends AppCompatActivity {
         permissionManager.registerPermissionLauncher(permissionLauncher);
 
         // Initialize views
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         webView = findViewById(R.id.webView);
         progressBar = findViewById(R.id.progressBar);
@@ -140,6 +138,9 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         
+            // إعداد Bottom Navigation
+            setupBottomNavigation();
+            
             Log.d(TAG, "MainActivity onCreate completed successfully");
         } catch (Exception e) {
             Log.e(TAG, "Error in onCreate: " + e.getMessage(), e);
@@ -455,6 +456,34 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * إعداد Bottom Navigation
+     */
+    private void setupBottomNavigation() {
+        BottomNavigationView bottomNavigation = findViewById(R.id.bottomNavigation);
+        if (bottomNavigation != null) {
+            bottomNavigation.setOnItemSelectedListener(item -> {
+                int itemId = item.getItemId();
+                
+                if (itemId == R.id.nav_home) {
+                    webView.loadUrl("https://digitalorder.store/");
+                    return true;
+                } else if (itemId == R.id.nav_shop) {
+                    webView.loadUrl("https://digitalorder.store/shop/");
+                    return true;
+                } else if (itemId == R.id.nav_cart) {
+                    webView.loadUrl("https://digitalorder.store/cart/");
+                    return true;
+                } else if (itemId == R.id.nav_account) {
+                    webView.loadUrl("https://digitalorder.store/my-account/");
+                    return true;
+                }
+                
+                return false;
+            });
+        }
+    }
+    
     @Override
     protected void onDestroy() {
         super.onDestroy();
