@@ -3,6 +3,7 @@ package com.digitalorder.store;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.net.ConnectivityManager;
@@ -37,7 +38,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 /**
  * Main Activity - الشاشة الرئيسية
- * Version: 1.0.6
+ * Version: 1.0.7
  * 
  * نسخة محسّنة مع ميزات احترافية:
  * - نظام صلاحيات متقدم
@@ -48,6 +49,8 @@ import com.google.android.material.snackbar.Snackbar;
  * - تحسينات في الأداء
  */
 public class MainActivity extends AppCompatActivity {
+
+    private static final String TAG = "MainActivity";
 
     private WebView webView;
     private ProgressBar progressBar;
@@ -66,6 +69,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(TAG, "MainActivity onCreate started");
+        
+        try {
         
         // تطبيق الوضع الليلي من الإعدادات
         preferences = getSharedPreferences("AppSettings", MODE_PRIVATE);
@@ -132,6 +138,12 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 showError(getString(R.string.no_internet));
             }
+        }
+        
+            Log.d(TAG, "MainActivity onCreate completed successfully");
+        } catch (Exception e) {
+            Log.e(TAG, "Error in onCreate: " + e.getMessage(), e);
+            Toast.makeText(this, "حدث خطأ: " + e.getMessage(), Toast.LENGTH_LONG).show();
         }
     }
 
