@@ -11,7 +11,7 @@ import androidx.core.content.ContextCompat;
 
 /**
  * Permission Manager - إدارة الصلاحيات
- * Version: 1.0.6
+ * Version: 2.0.0
  * 
  * يدير طلب الصلاحيات في وقت التشغيل بطريقة احترافية
  */

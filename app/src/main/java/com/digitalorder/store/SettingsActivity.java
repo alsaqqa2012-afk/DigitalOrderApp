@@ -13,7 +13,7 @@ import com.google.android.material.card.MaterialCardView;
 
 /**
  * Settings Activity - شاشة الإعدادات
- * Version: 1.0.6
+ * Version: 2.0.0
  * 
  * توفر إعدادات التطبيق:
  * - الوضع الليلي

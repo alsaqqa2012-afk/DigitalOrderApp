@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Splash Activity - شاشة البداية
- * Version: 1.0.7
+ * Version: 2.0.0
  * 
  * تعرض شعار التطبيق لمدة 2 ثانية ثم تنتقل للشاشة الرئيسية
  * 

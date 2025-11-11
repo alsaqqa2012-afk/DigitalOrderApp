@@ -38,7 +38,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 /**
  * Main Activity - الشاشة الرئيسية
- * Version: 1.0.7
+ * Version: 2.0.0
  * 
  * نسخة محسّنة مع ميزات احترافية:
  * - نظام صلاحيات متقدم
@@ -224,7 +224,7 @@ public class MainActivity extends AppCompatActivity {
         webSettings.setMixedContentMode(WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE);
         
         // Set user agent
-        webSettings.setUserAgentString(webSettings.getUserAgentString() + " DigitalOrderApp/1.0.6");
+        webSettings.setUserAgentString(webSettings.getUserAgentString() + " DigitalOrderApp/2.0.0");
 
         // Set WebViewClient
         webView.setWebViewClient(new WebViewClient() {

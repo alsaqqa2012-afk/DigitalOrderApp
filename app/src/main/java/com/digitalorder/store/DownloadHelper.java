@@ -15,7 +15,7 @@ import androidx.core.content.ContextCompat;
 
 /**
  * Helper class for handling file downloads
- * Version: 1.0.5
+ * Version: 2.0.0
  * 
  * التحديثات في v1.0.5:
  * - إضافة التحقق من الصلاحيات قبل التحميل

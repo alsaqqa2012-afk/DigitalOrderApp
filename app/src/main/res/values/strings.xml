@@ -7,7 +7,7 @@
     <string name="error_loading">حدث خطأ أثناء التحميل</string>
     <string name="exit_message">اضغط مرة أخرى للخروج</string>
     <string name="website_url">https://digitalorder.store</string>
-    <string name="version">الإصدار 1.0.6</string>
+    <string name="version">الإصدار 2.0.0</string>
     <string name="ssl_error">لا يمكن تحميل الموقع بسبب مشكلة في شهادة الأمان</string>
     <string name="no_app_to_open">لا يوجد تطبيق لفتح هذا الرابط</string>
     <string name="downloading_file">جاري تحميل الملف: %1$s</string>
@@ -28,9 +28,14 @@
     <string name="cache_cleared">تم مسح الكاش بنجاح</string>
     <string name="about">حول</string>
     <string name="about_app">حول التطبيق</string>
-    <string name="about_message">تطبيق الطلب الرقمي\n\nالإصدار: 1.0.6\n\nتطبيق متقدم يوفر تجربة تصفح سلسة وسريعة لموقع digitalorder.store</string>
+    <string name="about_message">تطبيق الطلب الرقمي\n\nالإصدار: 2.0.0\n\nتطبيق متقدم يوفر تجربة تصفح سلسة وسريعة لموقع digitalorder.store</string>
     <string name="share">مشاركة</string>
     <string name="share_via">مشاركة عبر</string>
     <string name="refresh">تحديث</string>
     <string name="home">الرئيسية</string>
+    
+    <!-- النصوص المفقودة لشريط التنقل السفلي -->
+    <string name="shop">المتجر</string>
+    <string name="cart">السلة</string>
+    <string name="account">حسابي</string>
 </resources>
